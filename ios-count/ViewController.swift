@@ -33,6 +33,11 @@ class ViewController: UIViewController {
         count /= 2
         label.text = String(count)
     }
+    
+    @IBAction func clear () {
+        count = 0
+        label.text = "0"
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
