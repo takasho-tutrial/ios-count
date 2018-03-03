@@ -18,6 +18,26 @@ class ViewController: UIViewController {
         count += 1
         label.text = String(count)
     }
+    
+    @IBAction func decrement () {
+        count -= 1
+        label.text = String(count)
+    }
+    
+    @IBAction func twice () {
+        count *= 2
+        label.text = String(count)
+    }
+    
+    @IBAction func half () {
+        count /= 2
+        label.text = String(count)
+    }
+    
+    @IBAction func clear () {
+        count = 0
+        label.text = "0"
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
